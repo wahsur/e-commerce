@@ -5,6 +5,8 @@ const productRoutes = require("./routes/productRoutes");
 app.use(express.json()); // Middleware untuk parsing JSON body
 const userRoutes = require("./routes/userRoutes");
 app.use("/api/users", userRoutes);
+const transactionRoutes = require("./routes/transactionRoutes");
+app.use("/api/transactions", transactionRoutes);
 
 // Rute untuk setiap modul
 app.use("/api/products", productRoutes);
