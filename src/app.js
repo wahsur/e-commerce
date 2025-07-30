@@ -7,6 +7,8 @@ const userRoutes = require("./routes/userRoutes");
 app.use("/api/users", userRoutes);
 const transactionRoutes = require("./routes/transactionRoutes");
 app.use("/api/transactions", transactionRoutes);
+const customerRoutes = require("./routes/customerRoutes");
+app.use("/api/customers", customerRoutes);
 
 // Rute untuk setiap modul
 app.use("/api/products", productRoutes);
