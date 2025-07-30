@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const productRoutes = require("./routes/productRoutes");
 app.use(express.json()); // Middleware untuk parsing JSON body
+const userRoutes = require("./routes/userRoutes");
+app.use("/api/users", userRoutes);
 
 // Rute untuk setiap modul
 app.use("/api/products", productRoutes);
